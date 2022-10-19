@@ -1,9 +1,15 @@
-<script setup lang="ts">
-</script>
+<script lang="tsx">
+import { defineComponent } from 'vue';
 
-<template>
-  <div class="title">Hello, This is Vue3 Template!</div>
-</template>
+export default defineComponent({
+  setup: (props, context) => {
+    return () => (
+      <div class="title">Hello, This is Vue3 Template!</div>
+  )
+ }
+})
+
+</script>
 
 <style scoped lang="scss">
 .title {
