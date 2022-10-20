@@ -1,10 +1,14 @@
 <script lang="tsx">
 import { defineComponent } from 'vue';
+import Icon from './components/icon.vue';
 
 export default defineComponent({
   setup: (props, context) => {
     return () => (
-      <div class="title">Hello, This is Vue3 Template!</div>
+      <div class="title">
+        Hello, This is Vue3 Template!
+        <Icon name="vue" />
+      </div>
   )
  }
 })
@@ -15,7 +19,6 @@ export default defineComponent({
 .title {
   height: 6em;
   padding: 1.5em;
-  will-change: filter;
   color: #007acc;
 }
 </style>
